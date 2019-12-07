@@ -28,7 +28,7 @@ class Queue:
         now = time.time()
         while now < t_end and not pq.is_empty():
             now = time.time()
-            r = randomr = random.randint(0, max_time)
+            r = random.randint(0, max_time)
             time.sleep(r)
             person = pq.dequeue()
             print(person)
